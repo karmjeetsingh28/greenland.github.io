@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+
+.header {
+    height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("pexels-photo-1172518.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+
+nav img {
+    width: 300px;
+    height: 100px;
+}
+
+nav ul {
+    text-align: right;
+    display: inline;
+    list-style: none;
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    
+}
+
+nav ul li:hover {
+    font-size: 18px;
+}
+
+
+.main-content {
+    text-align: center;
+    margin: 10% 0px;
+}
+
+.main-content h1 {
+    font-size: 3em;
+    
+}
+
+p {
+    font-size: 13px;
+}
+
+.main-content .button {
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 25px auto;
+    border: 1px solid white;
+    height: 35px;
+    width: 150px;
+    line-height: 32px;
+}
+
+.main-content .button:hover {
+    background-color: white;
+    color: black;
+}
+
+.wave {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    animation: animate 8s linear infinite;
+    background-color: rgba(0, 247, 255, 0.247);
+}
+
+@keyframes animate {
+
+    0% {
+        left: 0
+    }
+
+    100% {
+        left: -700px;
+    }
+
+}
+
+
+
+/* -----pakages----- */
+.pakages {
+    width: 95%;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 25px;
+
+
+    
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    display:inline;
+    
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    
+}
+
+
+.row {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.pakages-col {
+    flex-basis: 31%;
+    background-color: #ffc4c4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    transition: 0.5s;
+    margin: 20px 10px;
+}
+
+.pakages-col:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+
+@media(max-width:800px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+/* <!-- -------places-visit----- --> */
+
+.places {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 5%;
+
+}
+
+@media(max-width:800px) {
+    .container{
+        flex-direction:column;
+    }
+}
+
+.container {
+    
+    width: 99%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin: 3px 8px;
+    
+    
+    display: flex;
+  
+  }
+  .container img {
+    width: 100%;
+    height: 300px;
+    
+ 
+  }
+
+  .box {
+    background-color: #ff000080;
+    position: absolute;
+   top: -130%;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    
+    transition: all 0.9s;
+  }
+
+  .container:hover .box {
+    top: 0;
+    display: block;
+  }
+
+  .box h2,
+  p {
+    color: #fff;
+    padding-top: 100px;
+  }
+
+
+    
